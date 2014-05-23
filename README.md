@@ -1,9 +1,9 @@
 Infinity-Light-Box
 ==================
 int receiverpin = 11;
-int led = 3;  //B
-int led2 = 5; //G
-int led3 = 6; //R
+int led = 3;  
+int led2 = 5; 
+int led3 = 6; 
 int onOff=0;
 int channel = 0;
 int color = 50;
@@ -70,47 +70,56 @@ switch(results.value){
     delay(1);
   }
   break; 
-case 0x010:
+  case 0x010:
+  
   case 0x810:
-analogWrite(led,255);
+  analogWrite(led,255);
   analogWrite(led2,0);
   analogWrite(led3,0);
   break;
+
 case 0x410:
-analogWrite(led,0);
+  analogWrite(led,0);
   analogWrite(led2,0);
   analogWrite(led3,255);
   break;
+
 case 0xC10:
   analogWrite(led,255);
   analogWrite(led2,128);
   analogWrite(led3,0);
   break;
+
 case 0x210:
   analogWrite(led,255);
   analogWrite(led2,0);
   analogWrite(led3,255);
   break;
+
 case 0xA10:
   analogWrite(led,255);
   analogWrite(led2,51);
   analogWrite(led3,255);
   break;
+
 case 0x610:
   analogWrite(led,255);
   analogWrite(led2,69);
   analogWrite(led3,0);
   break;
+
 case 0xE10:
   analogWrite(led,210);
   analogWrite(led2,105);
   analogWrite(led3,30);
   break;
+
 case 0x110:
   analogWrite(led,250);
   analogWrite(led2,240);
   analogWrite(led3,230);
   break;
+  
 case 0x910:
   analogWrite(led,255);
   analogWrite(led2,20);
